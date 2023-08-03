@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+
+{% block head %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+
+{% endblock head %}
+
+
+{% block body %}
+
+<div class="bg-primary" style="min-height: 330px; display: flex; justify-content: center; align-items: center;">
+    <div class="container text-center mt-5 text-white">
+        <h1 class="mt-3">Find your next top tech job in 1 week.</h1>
+        <p class="mt-5">Are you a top 2% Software Engineer, Product Manager or Data Scientist?</p>
+        <p>Let leading Indian technology companies compete to hire you.</p>
+        <button class="btn btn-success mt-5">Join Now</button>
+        <p class="mb-5">100% free</p>
+    </div>
+</div>
+
+<div class="companies mb-5">
+    <div class="companies-content">
+        <h2 class="mt-5 mb-5">More than 5000 companies</h2>
+        <img src="{% static 'images/customers-md.webp' %}" alt="companies">
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white p-3">
+
+    <!-- Section: Links  -->
+    <section class="mt-5">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3 text-secondary"></i>Hiring Tycoon
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Hire</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Employer</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Companies</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">About</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope me-3 text-secondary"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="#">Hiring Tycoon</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+{% endblock body %}

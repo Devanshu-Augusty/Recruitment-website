@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/jobs.css' %}">
+{% endblock head %}
+
+{% block body %}
+
+
+<div class="container-fluid text-center text-danger p-3 bg-info">
+    <h1>
+        Jobs
+    </h1>
+</div>
+
+
+<div class="conatiner-fluid px-0 bg-dark jobs ">
+{% for job in jobs reversed%}
+
+<div class="container text-center bg-light jobs-content">
+    <h2>
+    {{job.title}}
+    </h2>
+    <div class="description">
+        <h5>{{job.description}}</h5>
+    </div>
+</div>
+
+{% endfor %}
+
+
+
+{% endblock body %}

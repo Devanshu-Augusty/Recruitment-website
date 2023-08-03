@@ -1,0 +1,12 @@
+.jobs-content {
+    border-bottom: 4px solid gray;
+}
+
+.jobs {
+    border-top: 4px solid gray;
+}
+
+.description {
+    margin: 10px 15%;
+    padding: 10px
+}
